@@ -1,0 +1,26 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  display: flex;
+  align-self: center;
+  margin: 40px 0;
+
+  &__item {
+    background-color: #c0392c;
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+  }
+}
