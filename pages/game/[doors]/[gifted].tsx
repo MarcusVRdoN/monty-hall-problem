@@ -17,7 +17,7 @@ function Game() {
     const validDoorGifted = gifted >= 1 && gifted <= doors
 
     setValid(validDoorsQuantity && validDoorGifted)
-  }, [doors])
+  }, [doors, router.query.doors, router.query.gifted])
 
   useEffect(() => {
     const doors = +router.query.doors
