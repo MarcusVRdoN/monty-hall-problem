@@ -1,0 +1,32 @@
+.input-number {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+
+  &__text {
+    font-size: 1.5rem;
+    color: #555;
+  }
+
+  &__value {
+    font-size: 6rem;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 5px;
+    border: none;
+  }
+}
