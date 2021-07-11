@@ -1,3 +1,5 @@
+import GoogleTagManager from '../components/GoogleTagManager'
+
 import '@/styles/globals.scss'
 import '@/styles/home.scss'
 import '@/styles/game.scss'
@@ -7,7 +9,11 @@ import '@/styles/gift.scss'
 import '@/styles/input-number.scss'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <GoogleTagManager>
+      <Component {...pageProps} />
+    </GoogleTagManager>
+  )
 }
 
 export default MyApp
